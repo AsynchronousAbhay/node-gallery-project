@@ -1,0 +1,17 @@
+<%- include('header')%>
+
+  <div class="container">
+
+    <%- include('nav')%>
+
+    <form action="/add" method="post" class="px-5 py-3 rounded shadow-lg container mt-5 w-75" enctype="multipart/form-data">
+      <h1 class="text-success mb-4">Add image</h1>
+      <input type="text" placeholder="card title" name="title" class="form-control mb-5 w-100 p-2 fs-5">
+      <input type="text" placeholder="Author name" name="author" class="form-control mb-5 w-100 p-2 fs-5">
+      <input type="file" placeholder="Add file" name="image" class="w-100 form-control mb-4 p-2 fs-5">
+      <button class="p-2 px-5 fs-6 btn btn-success">Add to Gallery</button>
+    </form>
+
+  </div>
+
+  <%- include('footer')%>
